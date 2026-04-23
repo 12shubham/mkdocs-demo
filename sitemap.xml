@@ -5,14 +5,6 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/api-reference/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/changelog/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
          <loc>https://12shubham.github.io/mkdocs-demo/tags/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -37,31 +29,15 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/docs-as-code/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/docs-as-code/workflow/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
          <loc>https://12shubham.github.io/mkdocs-demo/framework/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/framework/components/</loc>
+         <loc>https://12shubham.github.io/mkdocs-demo/framework/create-page/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/framework/new-page/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/getting-started/configuration/</loc>
-         <lastmod>2026-04-23</lastmod>
-    </url>
-    <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/getting-started/installation/</loc>
+         <loc>https://12shubham.github.io/mkdocs-demo/framework/reference/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
@@ -77,11 +53,11 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/showcase/components/</loc>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/diagrams/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
-         <loc>https://12shubham.github.io/mkdocs-demo/showcase/diagrams/</loc>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/ui-components/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
 </urlset>
