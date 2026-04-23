@@ -1,81 +1,150 @@
-site_name: MkDocs Demo
+# ===========================================================================
+# MkDocs Framework — mkdocs.yml
+# Full-featured config for rapid documentation sites.
+# Reference: https://squidfunk.github.io/mkdocs-material/
+# ===========================================================================
+
+site_name: MkDocs Framework
 site_url: https://12shubham.github.io/mkdocs-demo
-site_description: A live MkDocs demo site built with Material theme
+site_description: >-
+  Rapid-start MkDocs framework — DevOps lifecycle, full Material feature
+  showcase, and multi-cloud deployment guides. All as code.
 site_author: 12shubham
 repo_url: https://github.com/12shubham/mkdocs-demo
 repo_name: 12shubham/mkdocs-demo
 edit_uri: edit/main/docs/
+copyright: Copyright &copy; 2026 &middot; Built with MkDocs + Material
 
+# ── Theme ───────────────────────────────────────────────────────────────────
 theme:
   name: material
   palette:
+    # Light mode
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+    # Dark mode
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: custom
+      accent: custom
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.expand
-    - navigation.top
-    - search.suggest
-    - search.highlight
-    - content.tabs.link
-    - content.code.copy
+    # Navigation
+    - navigation.tabs           # Top-level section tabs
+    - navigation.tabs.sticky    # Tabs stay visible while scrolling
+    - navigation.sections       # Group pages in sidebar sections
+    - navigation.indexes        # Click section header → section index.md
+    - navigation.top            # Back-to-top button
+    - navigation.footer         # Prev / Next links at page bottom
+    - navigation.instant        # SPA-style instant page loads
+    - navigation.instant.progress # Progress bar during navigation
+    # Search
+    - search.suggest            # Inline autocomplete
+    - search.highlight          # Highlight search terms on page
+    - search.share              # Shareable search URL
+    # Content
+    - content.tabs.link         # Sync same-label tabs across page
+    - content.code.copy         # Copy button on every code block
+    - content.code.annotate     # Inline (1) annotations in code
+    - content.tooltips          # Hover tooltips on abbreviations & links
+    # Header / TOC
+    - header.autohide           # Header hides on scroll-down
+    - toc.follow                # TOC sidebar follows active heading
   icon:
     repo: fontawesome/brands/github
+    logo: material/book-open-page-variant
 
-nav:
-  - Home: index.md
-  - Docs as Code:
-      - What is Docs as Code?: docs-as-code/index.md
-      - The Git Workflow: docs-as-code/workflow.md
-  - Getting Started:
-      - Installation: getting-started/installation.md
-      - Configuration: getting-started/configuration.md
-  - API Reference: api-reference.md
-  - Changelog: changelog.md
+# ── Extra files ──────────────────────────────────────────────────────────────
+extra_css:
+  - assets/extra.css
 
+extra_javascript:
+  - javascripts/mermaid-config.js               # Brand-colour Mermaid init
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
+
+# ── Plugins ──────────────────────────────────────────────────────────────────
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags                            # Tags rendered via docs/tags.md
+  - minify:
+      minify_html: true         # Minify HTML output for faster page loads
 
+# ── Markdown extensions ───────────────────────────────────────────────────────
 markdown_extensions:
-  - admonition
-  - pymdownx.details
+  - abbr                        # Abbreviation tooltips (+ auto_append below)
+  - admonition                  # !!! note / tip / warning blocks
+  - attr_list                   # {.class #id} on any element
+  - def_list                    # Definition lists
+  - footnotes                   # Inline footnotes[^1]
+  - md_in_html                  # Markdown inside HTML tags
+  - tables                      # GFM pipe tables
+  - toc:
+      permalink: true           # § anchor links on headings
+      title: On this page
+  - pymdownx.betterem           # Smarter bold / italic parsing
+  - pymdownx.caret              # Superscript ^text^
+  - pymdownx.critic             # {==highlight==} {--del--} {++add++}
+  - pymdownx.details            # Collapsible ??? admonitions
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true     # Linkable line numbers
+      line_spans: __span        # Required for line-range highlighting
+      pygments_lang_class: true # data-lang attribute on code blocks
+  - pymdownx.inlinehilite       # `#!python inline code` highlighting
+  - pymdownx.keys               # ++ctrl+c++ keyboard keys
+  - pymdownx.mark               # ==highlighted text==
+  - pymdownx.smartsymbols       # (c) → © (tm) → ™ -- → –
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md   # Appended to every page
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
   - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list
-  - md_in_html
+      alternate_style: true     # Required === "Tab" syntax
+      combine_header_slug: true
+  - pymdownx.tasklist:
+      custom_checkbox: true     # Styled checkboxes
+  - pymdownx.tilde              # ~~strikethrough~~ / ~subscript~
 
-extra_javascript:
-  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
-
+# ── Navigation ────────────────────────────────────────────────────────────────
 nav:
   - Home: index.md
-  - Getting Started:
-    - Installation: getting-started/installation.md
-    - Configuration: getting-started/configuration.md
-  - API Reference: api-reference.md
-  - Changelog: changelog.md
+  - Framework:
+      - Overview: framework/index.md
+      - All Components: framework/components.md
+      - Creating New Pages: framework/new-page.md
+  - Deployment:
+      - Overview: deployment/index.md
+      - "GitHub Pages": deployment/github.md
+      - "AWS (S3 + CloudFront)": deployment/aws.md
+      - "Azure Static Web Apps": deployment/azure.md
+      - "GCP Cloud Storage": deployment/gcp.md
+  - Showcase:
+      - All Features: showcase/index.md
+      - Admonitions: showcase/admonitions.md
+      - Code Blocks: showcase/code-blocks.md
+      - Diagrams: showcase/diagrams.md
+      - UI Components: showcase/components.md
+  - Tags: tags.md
 
+# ── Social & metadata ─────────────────────────────────────────────────────────
 extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/12shubham/mkdocs-demo
+      name: GitHub
+  generator: false
