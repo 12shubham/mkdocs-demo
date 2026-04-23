@@ -125,20 +125,20 @@ nav:
   - Home: index.md
   - Framework:
       - Overview: framework/index.md
-      - All Components: framework/components.md
-      - Creating New Pages: framework/new-page.md
+      - Component Reference: framework/reference.md
+      - Create a Page: framework/create-page.md
   - Deployment:
       - Overview: deployment/index.md
-      - "GitHub Pages": deployment/github.md
-      - "AWS (S3 + CloudFront)": deployment/aws.md
-      - "Azure Static Web Apps": deployment/azure.md
-      - "GCP Cloud Storage": deployment/gcp.md
+      - GitHub Pages: deployment/github.md
+      - AWS S3 + CloudFront: deployment/aws.md
+      - Azure Static Web Apps: deployment/azure.md
+      - GCP Cloud Storage: deployment/gcp.md
   - Showcase:
       - All Features: showcase/index.md
       - Admonitions: showcase/admonitions.md
       - Code Blocks: showcase/code-blocks.md
       - Diagrams: showcase/diagrams.md
-      - UI Components: showcase/components.md
+      - UI Components: showcase/ui-components.md
   - Tags: tags.md
 
 # ── Social & metadata ─────────────────────────────────────────────────────────

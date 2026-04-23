@@ -74,7 +74,7 @@ graph LR
     B --> C["Open Pull Request\n(doc review)"]
     C --> D{"Approved?"}
     D -->|Changes| A
-    D -->|"✅ Yes"| E["Merge to main"]
+    D -->|Approved| E["Merge to main"]
     E --> F["GitHub Actions\ntriggers"]
     F --> G["mkdocs gh-deploy\n(< 60 s)"]
     G --> H["🌐 Live on\nGitHub Pages"]
@@ -121,14 +121,14 @@ nav:
 
 | Plugin | Purpose | Enabled |
 |---|---|---|
-| `search` | Full-text search with autocomplete | ✅ |
-| `tags` | Tag pages and render a tag index | ✅ |
-| `minify` | Minify HTML for faster page loads | ✅ |
-| `git-revision-date-localized` | Show "Last updated" on pages | Optional |
-| `social` | Auto-generate social preview cards | Optional (Insiders) |
-| `offline` | Bundle site for offline viewing | Optional (Insiders) |
+| `search` | Full-text search with autocomplete | :material-check: |
+| `tags` | Tag pages and render a tag index | :material-check: |
+| `minify` | Minify HTML for faster page loads | :material-check: |
+| `git-revision-date-localized` | Show "Last updated" on pages | :material-minus: Optional |
+| `social` | Auto-generate social preview cards | :material-minus: Insiders |
+| `offline` | Bundle site for offline viewing | :material-minus: Insiders |
 
 ---
 
-[All Components →](components.md){ .md-button .md-button--primary }
-[Creating New Pages →](new-page.md){ .md-button }
+[Component Reference →](reference.md){ .md-button .md-button--primary }
+[Create a Page →](create-page.md){ .md-button }

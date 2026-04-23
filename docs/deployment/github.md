@@ -114,8 +114,8 @@ Protect `main` so docs always go through PR review:
 
 1. **Settings → Branches → Add branch protection rule**
 2. Pattern: `main`
-3. Enable: ✅ Require a pull request before merging
-4. Enable: ✅ Require status checks to pass
+3. Enable: :material-check: Require a pull request before merging
+4. Enable: :material-check: Require status checks to pass
 
 ---
 

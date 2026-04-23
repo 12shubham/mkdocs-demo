@@ -24,28 +24,15 @@ Plain Markdown · Git-versioned · PR-reviewed · Auto-deployed · Always curren
 ## The Eight-Phase DevOps Lifecycle
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {
-  'primaryColor':       '#FD5108',
-  'primaryTextColor':   '#ffffff',
-  'primaryBorderColor': '#FD5108',
-  'lineColor':          '#FE7C39',
-  'secondaryColor':     '#FFF5ED',
-  'tertiaryColor':      '#FFCDA8',
-  'background':         '#ffffff',
-  'clusterBkg':         '#FFF5ED',
-  'titleColor':         '#FD5108',
-  'edgeLabelBackground':'#FFF5ED',
-  'fontFamily':         'Inter, sans-serif'
-}}}%%
 graph LR
-    PLAN("📋 Plan")
-    CODE("💻 Code")
-    BUILD("🔨 Build")
-    TEST("🧪 Test")
-    RELEASE("📦 Release")
-    DEPLOY("🚀 Deploy")
-    OPERATE("⚙️ Operate")
-    MONITOR("📊 Monitor")
+    PLAN["📋 Plan"]
+    CODE["💻 Code"]
+    BUILD["🔨 Build"]
+    TEST["🧪 Test"]
+    RELEASE["📦 Release"]
+    DEPLOY["🚀 Deploy"]
+    OPERATE["⚙️ Operate"]
+    MONITOR["📊 Monitor"]
 
     PLAN    --> CODE
     CODE    --> BUILD
@@ -54,7 +41,7 @@ graph LR
     RELEASE --> DEPLOY
     DEPLOY  --> OPERATE
     OPERATE --> MONITOR
-    MONITOR -.->|"Continuous Feedback"| PLAN
+    MONITOR -.->|Continuous Feedback| PLAN
 
     style PLAN    fill:#FD5108,stroke:#FD5108,color:#fff
     style CODE    fill:#FE7C39,stroke:#FE7C39,color:#fff
@@ -175,7 +162,7 @@ graph LR
     git add .
     git commit -m "docs: add new page"
     git push origin main
-    # GitHub Actions auto-deploys in < 60 seconds ✅
+    # GitHub Actions auto-deploys in < 60 seconds
     ```
 
 ---
@@ -183,3 +170,61 @@ graph LR
 !!! success "Live on GitHub Pages"
     This site deploys automatically on every push to `main`.  
     **[https://12shubham.github.io/mkdocs-demo](https://12shubham.github.io/mkdocs-demo)**
+
+
+---
+
+## What is MkDocs?
+
+[MkDocs](https://www.mkdocs.org/) is a fast, simple, and beautiful static site generator designed specifically for project documentation. Source files are written in **Markdown** and configured with a single **YAML** file.
+
+## Why Material for MkDocs?
+
+The [Material theme](https://squidfunk.github.io/mkdocs-material/) is the most popular MkDocs theme. It gives you:
+
+| Feature | Description |
+|---|---|
+| :material-palette: Dark/Light mode | Toggle between themes |
+| :material-magnify: Instant search | Full-text search across all pages |
+| :material-navigation: Navigation tabs | Clean top-level navigation |
+| :material-code-tags: Code highlighting | Syntax highlighting with copy button |
+| :material-responsive: Responsive | Looks great on mobile |
+
+## Key Features Shown in This Demo
+
+=== "Navigation"
+    - Top-level **tabs** for major sections
+    - Left sidebar for sub-pages
+    - "Back to top" button
+
+=== "Search"
+    - Click the search bar (or press `/`) and try searching for any term on this site
+
+=== "Code Blocks"
+    ```python title="hello.py"
+    def greet(name: str) -> str:
+        return f"Hello, {name}!"
+
+    print(greet("MkDocs"))
+    ```
+
+=== "Admonitions"
+    !!! tip "Pro Tip"
+        Admonitions are a great way to highlight important information.
+
+    !!! warning "Watch Out"
+        This is a warning block — useful for caveats and gotchas.
+
+---
+
+## How the Deploy Works
+
+```mermaid
+graph LR
+    A[Edit Markdown] --> B[git push to main]
+    B --> C[GitHub Actions triggers]
+    C --> D[mkdocs gh-deploy]
+    D --> E[Live on GitHub Pages]
+```
+
+**[Get Started →](framework/index.md)**

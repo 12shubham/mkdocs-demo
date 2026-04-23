@@ -4,7 +4,7 @@ tags:
   - Getting Started
 ---
 
-# Creating New Pages
+# Create a Page
 
 Step-by-step guide for adding a page to this framework in under 2 minutes.
 
@@ -188,9 +188,9 @@ Copy-paste any of these starter templates for common page types.
 
     ## Consequences
 
-    - ✅ Docs reviewed in PRs alongside code
-    - ✅ Auto-deployed on merge
-    - ❌ Engineers need to learn basic Markdown
+    - :material-check: Docs reviewed in PRs alongside code
+    - :material-check: Auto-deployed on merge
+    - :material-close: Engineers need to learn basic Markdown
     ```
 
 === "Changelog Page"
@@ -262,4 +262,4 @@ search:
 ---
 
 [← Framework Overview](index.md){ .md-button }
-[All Components →](components.md){ .md-button .md-button--primary }
+[Component Reference →](reference.md){ .md-button .md-button--primary }

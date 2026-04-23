@@ -73,11 +73,11 @@ graph LR
 | Factor | GitHub Pages | AWS | Azure | GCP |
 |---|:---:|:---:|:---:|:---:|
 | Cost (basic) | Free | $~0.03/GB | Free tier | Free tier |
-| Custom domain | ✅ | ✅ | ✅ | ✅ |
-| Free SSL | ✅ | ✅ | ✅ | ✅ |
-| Global CDN | ❌ | ✅ CloudFront | ✅ | ✅ |
-| PR previews | ❌ | ❌ | ✅ | ❌ |
-| Auth / private | ❌ | ✅ CloudFront | ✅ | ✅ |
+| Custom domain | :material-check: | :material-check: | :material-check: | :material-check: |
+| Free SSL | :material-check: | :material-check: | :material-check: | :material-check: |
+| Global CDN | :material-close: | :material-check: CloudFront | :material-check: | :material-check: |
+| PR previews | :material-close: | :material-close: | :material-check: | :material-close: |
+| Auth / private | :material-close: | :material-check: CloudFront | :material-check: | :material-check: |
 | Setup effort | Low | Medium | Low | Medium |
 
 ---

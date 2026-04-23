@@ -5,7 +5,7 @@ tags:
   - Reference
 ---
 
-# All Components
+# Component Reference
 
 Every MkDocs Material component available in this framework, with copy-paste syntax. This page is itself a live demo — every block below is rendered exactly as it appears in your docs.
 
@@ -193,7 +193,7 @@ Use `#!python print("hello")` for inline highlighted code.
     ---
     CSS variables map your colours to every Material component.
 
-    [:octicons-arrow-right-24: Brand colours](../showcase/components.md)
+    [:octicons-arrow-right-24: Brand colours](../showcase/ui-components.md)
 
 -   :material-cloud:{ .lg .middle } **Multi-cloud deploy**
 

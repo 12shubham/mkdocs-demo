@@ -44,7 +44,7 @@ This section is a **live feature showcase** — every page demonstrates the comp
     Grid cards, buttons, tabs, tooltips, icons, task lists,  
     keyboard keys, text formatting, and tables.
 
-    [:octicons-arrow-right-24: View showcase](components.md)
+    [:octicons-arrow-right-24: View showcase](ui-components.md)
 
 </div>
 
@@ -54,33 +54,33 @@ This section is a **live feature showcase** — every page demonstrates the comp
 
 | Feature | Extension / Plugin | Enabled |
 |---|---|:---:|
-| Admonitions | `admonition` | ✅ |
-| Collapsible admonitions | `pymdownx.details` | ✅ |
-| Code copy button | `content.code.copy` | ✅ |
-| Code annotations | `content.code.annotate` | ✅ |
-| Code line numbers | `pymdownx.highlight` | ✅ |
-| Inline code highlighting | `pymdownx.inlinehilite` | ✅ |
-| Content tabs | `pymdownx.tabbed` | ✅ |
-| Task lists | `pymdownx.tasklist` | ✅ |
-| Emoji & icons | `pymdownx.emoji` | ✅ |
-| Mermaid diagrams | `pymdownx.superfences` | ✅ |
-| Footnotes | `footnotes` | ✅ |
-| Abbreviation tooltips | `abbr` + `snippets` | ✅ |
-| Definition lists | `def_list` | ✅ |
-| Keyboard keys | `pymdownx.keys` | ✅ |
-| Text highlighting | `pymdownx.mark` | ✅ |
-| Strikethrough | `pymdownx.tilde` | ✅ |
-| Superscript | `pymdownx.caret` | ✅ |
-| Critic markup | `pymdownx.critic` | ✅ |
-| Smart symbols | `pymdownx.smartsymbols` | ✅ |
-| Grid cards | `attr_list` + `md_in_html` | ✅ |
-| Tooltips on links | `content.tooltips` | ✅ |
-| Tags | `tags` plugin | ✅ |
-| Full-text search | `search` plugin | ✅ |
-| HTML minification | `minify` plugin | ✅ |
-| Dark / light mode | Material palette | ✅ |
-| Instant navigation | `navigation.instant` | ✅ |
-| PR preview URL | Azure Static Web Apps | Optional |
-| Social preview cards | Material Insiders | Optional |
-| Math equations (KaTeX) | `pymdownx.arithmatex` | Optional |
-| Last-updated dates | `git-revision-date-localized` | Optional |
+| Admonitions | `admonition` | :material-check: |
+| Collapsible admonitions | `pymdownx.details` | :material-check: |
+| Code copy button | `content.code.copy` | :material-check: |
+| Code annotations | `content.code.annotate` | :material-check: |
+| Code line numbers | `pymdownx.highlight` | :material-check: |
+| Inline code highlighting | `pymdownx.inlinehilite` | :material-check: |
+| Content tabs | `pymdownx.tabbed` | :material-check: |
+| Task lists | `pymdownx.tasklist` | :material-check: |
+| Emoji & icons | `pymdownx.emoji` | :material-check: |
+| Mermaid diagrams | `pymdownx.superfences` | :material-check: |
+| Footnotes | `footnotes` | :material-check: |
+| Abbreviation tooltips | `abbr` + `snippets` | :material-check: |
+| Definition lists | `def_list` | :material-check: |
+| Keyboard keys | `pymdownx.keys` | :material-check: |
+| Text highlighting | `pymdownx.mark` | :material-check: |
+| Strikethrough | `pymdownx.tilde` | :material-check: |
+| Superscript | `pymdownx.caret` | :material-check: |
+| Critic markup | `pymdownx.critic` | :material-check: |
+| Smart symbols | `pymdownx.smartsymbols` | :material-check: |
+| Grid cards | `attr_list` + `md_in_html` | :material-check: |
+| Tooltips on links | `content.tooltips` | :material-check: |
+| Tags | `tags` plugin | :material-check: |
+| Full-text search | `search` plugin | :material-check: |
+| HTML minification | `minify` plugin | :material-check: |
+| Dark / light mode | Material palette | :material-check: |
+| Instant navigation | `navigation.instant` | :material-check: |
+| PR preview URL | Azure Static Web Apps | :material-minus: Optional |
+| Social preview cards | Material Insiders | :material-minus: Optional |
+| Math equations (KaTeX) | `pymdownx.arithmatex` | :material-minus: Optional |
+| Last-updated dates | `git-revision-date-localized` | :material-minus: Optional |
