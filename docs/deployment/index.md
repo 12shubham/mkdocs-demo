@@ -53,11 +53,11 @@ Regardless of cloud provider, the pattern is the same:
 
 ```mermaid
 graph LR
-    A["✏️ Edit Markdown"] --> B["git push\n(main branch)"]
+    A["fa:fa-pencil Edit Markdown"] --> B["git push\n(main branch)"]
     B --> C["CI/CD triggers\n(GitHub Actions)"]
     C --> D["pip install\n+ mkdocs build"]
     D --> E["Upload site/\nto hosting"]
-    E --> F["🌐 Live site\nupdated"]
+    E --> F["fa:fa-globe Live site\nupdated"]
 ```
 
 1. **Write** — edit any `.md` file

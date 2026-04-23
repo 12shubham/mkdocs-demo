@@ -21,7 +21,7 @@ graph LR
     C --> D["mkdocs gh-deploy\n--force"]
     D --> E["Commits built site\nto gh-pages branch"]
     E --> F["GitHub Pages\nserves gh-pages"]
-    F --> G["🌐 Live in\n< 60 seconds"]
+    F --> G["fa:fa-globe Live in\n< 60 seconds"]
 ```
 
 `mkdocs gh-deploy` is a built-in MkDocs command that builds the site and force-pushes the output to the `gh-pages` branch. GitHub Pages serves that branch automatically.

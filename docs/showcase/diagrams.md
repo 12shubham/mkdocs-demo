@@ -33,7 +33,7 @@ graph TD
     BUILD["mkdocs build"]
     TEST["Link Check\n& Lint"]
     DEPLOY["mkdocs gh-deploy"]
-    LIVE["🌐 GitHub Pages"]
+    LIVE["fa:fa-globe GitHub Pages"]
 
     REPO -->|"git push"| CI
     CI --> BUILD
@@ -60,7 +60,7 @@ sequenceDiagram
     GHA->>GHA: mkdocs build
     GHA->>GH: Push to gh-pages branch
     GH->>Pages: Deploy static site
-    Pages-->>Dev: ✅ Live in ~60s
+    Pages-->>Dev: Live in ~60s
 ```
 
 ---

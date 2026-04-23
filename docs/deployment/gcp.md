@@ -20,7 +20,7 @@ Deploy MkDocs to **Google Cloud Storage** with global CDN, or use **Firebase Hos
         GA --> BUILD["mkdocs build\n→ site/"]
         BUILD --> GCS["Cloud Storage\nBucket"]
         GCS --> CDN["Cloud CDN\n(global)"]
-        CDN --> USER["🌐 User"]
+        CDN --> USER["fa:fa-user User"]
 
         style GCS fill:#4285F4,stroke:#4285F4,color:#fff
         style CDN fill:#34A853,stroke:#34A853,color:#fff
@@ -32,7 +32,7 @@ Deploy MkDocs to **Google Cloud Storage** with global CDN, or use **Firebase Hos
         GH["GitHub\ngit push"] --> GA["GitHub Actions"]
         GA --> BUILD["mkdocs build\n→ site/"]
         BUILD --> FB["Firebase Hosting\n(managed CDN)"]
-        FB --> USER["🌐 User"]
+        FB --> USER["fa:fa-user User"]
 
         style FB fill:#FFCA28,stroke:#FFCA28,color:#000
     ```

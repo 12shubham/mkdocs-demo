@@ -70,14 +70,14 @@ mkdocs-demo/
 
 ```mermaid
 graph LR
-    A["✏️ Write Markdown\n(any editor)"] --> B["git push\n(feature branch)"]
+    A["fa:fa-pencil Write Markdown\n(any editor)"] --> B["git push\n(feature branch)"]
     B --> C["Open Pull Request\n(doc review)"]
     C --> D{"Approved?"}
     D -->|Changes| A
     D -->|Approved| E["Merge to main"]
     E --> F["GitHub Actions\ntriggers"]
     F --> G["mkdocs gh-deploy\n(< 60 s)"]
-    G --> H["🌐 Live on\nGitHub Pages"]
+    G --> H["fa:fa-globe Live on\nGitHub Pages"]
 ```
 
 ---

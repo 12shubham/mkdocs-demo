@@ -25,14 +25,14 @@ Plain Markdown · Git-versioned · PR-reviewed · Auto-deployed · Always curren
 
 ```mermaid
 graph LR
-    PLAN["📋 Plan"]
-    CODE["💻 Code"]
-    BUILD["🔨 Build"]
-    TEST["🧪 Test"]
-    RELEASE["📦 Release"]
-    DEPLOY["🚀 Deploy"]
-    OPERATE["⚙️ Operate"]
-    MONITOR["📊 Monitor"]
+    PLAN["fa:fa-clipboard-list Plan"]
+    CODE["fa:fa-code Code"]
+    BUILD["fa:fa-hammer Build"]
+    TEST["fa:fa-flask Test"]
+    RELEASE["fa:fa-box-open Release"]
+    DEPLOY["fa:fa-rocket Deploy"]
+    OPERATE["fa:fa-server Operate"]
+    MONITOR["fa:fa-chart-line Monitor"]
 
     PLAN    --> CODE
     CODE    --> BUILD

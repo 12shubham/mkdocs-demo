@@ -19,7 +19,7 @@ graph LR
     GA --> BUILD["mkdocs build\n→ site/"]
     BUILD --> S3["S3 Bucket\n(static hosting)"]
     S3 --> CF["CloudFront\nCDN"]
-    CF --> USER["🌐 User"]
+    CF --> USER["fa:fa-user User"]
     GA --> INVAL["Invalidate\nCloudFront cache"]
     INVAL --> CF
 

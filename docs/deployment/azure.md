@@ -19,7 +19,7 @@ graph LR
     GA --> BUILD["mkdocs build\n→ site/"]
     BUILD --> SWA["Azure Static\nWeb Apps"]
     SWA --> CDN["Global CDN\n(built-in)"]
-    CDN --> USER["🌐 User"]
+    CDN --> USER["fa:fa-user User"]
     GH -->|"Pull Request"| PREV["PR Preview\nEnvironment"]
     PREV --> CDN
 
