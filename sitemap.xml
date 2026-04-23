@@ -13,6 +13,30 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/tags/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/deployment/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/deployment/aws/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/deployment/azure/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/deployment/gcp/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/deployment/github/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://12shubham.github.io/mkdocs-demo/docs-as-code/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
@@ -21,11 +45,43 @@
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/framework/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/framework/components/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/framework/new-page/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
          <loc>https://12shubham.github.io/mkdocs-demo/getting-started/configuration/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/getting-started/installation/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/admonitions/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/code-blocks/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/components/</loc>
+         <lastmod>2026-04-23</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/showcase/diagrams/</loc>
          <lastmod>2026-04-23</lastmod>
     </url>
 </urlset>

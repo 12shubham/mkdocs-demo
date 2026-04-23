@@ -1,0 +1,141 @@
+/* ============================================================
+   BRAND COLOURS
+   Core Orange: #FD5108  |  White: #FFFFFF  |  Black: #000000
+   ============================================================
+
+   Orange scale:  500 #FD5108  400 #FE7C39  300 #FFAA72
+                  200 #FFCDA8  100 #FFE8D4   50 #FFF5ED
+   Grey scale:    500 #A1A8B3  400 #B5BCC4  300 #CBD1D6
+                  200 #DFE3E6  100 #EEEFF1   50 #F5F7F8
+   ============================================================ */
+
+:root {
+  --brand-orange:     #FD5108;
+  --brand-orange-400: #FE7C39;
+  --brand-orange-300: #FFAA72;
+  --brand-orange-200: #FFCDA8;
+  --brand-orange-100: #FFE8D4;
+  --brand-orange-50:  #FFF5ED;
+
+  --brand-grey-500: #A1A8B3;
+  --brand-grey-400: #B5BCC4;
+  --brand-grey-300: #CBD1D6;
+  --brand-grey-200: #DFE3E6;
+  --brand-grey-100: #EEEFF1;
+  --brand-grey-50:  #F5F7F8;
+}
+
+/* ── Light mode ────────────────────────────────────────────────────────── */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:             #FD5108;
+  --md-primary-fg-color--light:      #FE7C39;
+  --md-primary-fg-color--dark:       #c73e00;
+  --md-accent-fg-color:              #FD5108;
+  --md-accent-fg-color--transparent: rgba(253,81,8,.1);
+}
+
+/* ── Dark mode ─────────────────────────────────────────────────────────── */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:             #FD5108;
+  --md-primary-fg-color--light:      #FE7C39;
+  --md-primary-fg-color--dark:       #c73e00;
+  --md-accent-fg-color:              #FE7C39;
+  --md-accent-fg-color--transparent: rgba(254,124,57,.1);
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+.md-header { background-color: var(--brand-orange) !important; }
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg { filter: brightness(0) invert(1); }
+
+/* ── Primary buttons ─────────────────────────────────────────────────────── */
+.md-button--primary {
+  background-color: var(--brand-orange) !important;
+  border-color:     var(--brand-orange) !important;
+  color: #fff !important;
+}
+.md-button--primary:hover {
+  background-color: var(--brand-orange-400) !important;
+  border-color:     var(--brand-orange-400) !important;
+}
+
+/* ── Tip admonition → brand orange ───────────────────────────────────────── */
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--brand-orange);
+}
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: rgba(253,81,8,.12);
+}
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: var(--brand-orange);
+}
+
+/* ── Hero banner ─────────────────────────────────────────────────────────── */
+.hero-strip {
+  background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-orange-400) 100%);
+  border-radius: 8px;
+  padding: 2.5rem 3rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.hero-strip h1,
+.hero-strip h2,
+.hero-strip p { color: #fff !important; margin: 0 0 .75rem; }
+.hero-strip .md-button {
+  margin: .5rem .5rem 0 0;
+  border-color: rgba(255,255,255,.6) !important;
+  color: #fff !important;
+}
+.hero-strip .md-button--primary {
+  background-color: #fff !important;
+  color: var(--brand-orange) !important;
+  border-color: #fff !important;
+}
+
+/* ── Phase / stat cards ──────────────────────────────────────────────────── */
+.phase-card {
+  border-left: 4px solid var(--brand-orange);
+  padding-left: 1rem;
+}
+
+/* ── Colour swatches (brand reference page) ──────────────────────────────── */
+.swatch {
+  display: inline-block;
+  width: 1.75rem; height: 1.75rem;
+  border-radius: 4px;
+  vertical-align: middle;
+  margin-right: .4rem;
+  border: 1px solid var(--brand-grey-200);
+}
+
+/* ── Grid card hover lift ────────────────────────────────────────────────── */
+.md-typeset .grid.cards > :is(ul,ol) > li,
+.md-typeset .grid.cards > * {
+  transition: box-shadow .2s, transform .2s;
+}
+.md-typeset .grid.cards > :is(ul,ol) > li:hover,
+.md-typeset .grid.cards > *:hover {
+  box-shadow: 0 6px 20px rgba(0,0,0,.12);
+  transform: translateY(-2px);
+}
+
+/* ── Inline badge ─────────────────────────────────────────────────────────── */
+.badge-orange {
+  display: inline-block;
+  background: var(--brand-orange);
+  color: #fff;
+  font-size: .7rem;
+  font-weight: 700;
+  border-radius: 3px;
+  padding: .1em .45em;
+  vertical-align: middle;
+}
+
+/* ── Keyboard key override ────────────────────────────────────────────────── */
+kbd {
+  border-color: var(--brand-grey-300) !important;
+  background-color: var(--brand-grey-50) !important;
+}
