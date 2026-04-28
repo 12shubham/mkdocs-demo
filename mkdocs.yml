@@ -4,11 +4,11 @@
 # Reference: https://squidfunk.github.io/mkdocs-material/
 # ===========================================================================
 
-site_name: MkDocs Framework
+site_name: Docs as Code
 site_url: https://12shubham.github.io/mkdocs-demo
 site_description: >-
-  Rapid-start MkDocs framework — DevOps lifecycle, full Material feature
-  showcase, and multi-cloud deployment guides. All as code.
+  Turn documentation chaos into a searchable, always-current portal.
+  Plain Markdown, Git-versioned, PR-reviewed, auto-deployed in under 60 seconds.
 site_author: 12shubham
 repo_url: https://github.com/12shubham/mkdocs-demo
 repo_name: 12shubham/mkdocs-demo
@@ -124,22 +124,25 @@ markdown_extensions:
 # ── Navigation ────────────────────────────────────────────────────────────────
 nav:
   - Home: index.md
+  - Live Demo:
+      - Before: before.md
+      - After: after.md
   - Framework:
-      - Overview: framework/index.md
-      - Component Reference: framework/reference.md
-      - Create a Page: framework/create-page.md
-  - Deployment:
-      - Overview: deployment/index.md
-      - GitHub Pages: deployment/github.md
-      - AWS S3 + CloudFront: deployment/aws.md
-      - Azure Static Web Apps: deployment/azure.md
-      - GCP Cloud Storage: deployment/gcp.md
-  - Showcase:
-      - All Features: showcase/index.md
-      - Admonitions: showcase/admonitions.md
-      - Code Blocks: showcase/code-blocks.md
-      - Diagrams: showcase/diagrams.md
-      - UI Components: showcase/ui-components.md
+      - Quick Setup: framework/index.md
+      - Add a Page: framework/create-page.md
+      - Site Reference: framework/reference.md
+      - Deploy:
+          - Deployment Options: deployment/index.md
+          - GitHub Pages: deployment/github.md
+          - AWS S3 + CloudFront: deployment/aws.md
+          - Azure Static Web Apps: deployment/azure.md
+          - GCP Cloud Storage: deployment/gcp.md
+      - Showcase:
+          - All Components: showcase/index.md
+          - Admonitions: showcase/admonitions.md
+          - Code Blocks: showcase/code-blocks.md
+          - Diagrams: showcase/diagrams.md
+          - UI Components: showcase/ui-components.md
   - Tags: tags.md
 
 # ── Social & metadata ─────────────────────────────────────────────────────────

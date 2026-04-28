@@ -1,230 +1,274 @@
 ---
 hide:
   - toc
-tags:
-  - DevOps
-  - Overview
+  - navigation.footer
 ---
 
 <div class="hero-strip" markdown>
 
-# :material-infinity: DevOps Documentation Framework
+# Did you know there's a more efficient way to manage and share project documentation?
 
-**Document every phase of your pipeline as code.**  
-Plain Markdown · Git-versioned · PR-reviewed · Auto-deployed · Always current.
+Replace scattered Word docs, outdated SharePoint pages, and version confusion with a
+**single searchable portal** — reviewed like code, deployed in under 60 seconds, and always current.
 
-[Get Started](framework/index.md){ .md-button .md-button--primary }
-[All Features](showcase/index.md){ .md-button }
-[Deploy Now](deployment/index.md){ .md-button }
+[See the Live Demo](#live-demo){ .md-button .md-button--primary }
+[Get Started](framework/index.md){ .md-button }
 
 </div>
 
 ---
 
-## The Eight-Phase DevOps Lifecycle
-
-```mermaid
-graph LR
-    PLAN["fa:fa-clipboard-list Plan"]
-    CODE["fa:fa-code Code"]
-    BUILD["fa:fa-hammer Build"]
-    TEST["fa:fa-flask Test"]
-    RELEASE["fa:fa-box-open Release"]
-    DEPLOY["fa:fa-rocket Deploy"]
-    OPERATE["fa:fa-server Operate"]
-    MONITOR["fa:fa-chart-line Monitor"]
-
-    PLAN    --> CODE
-    CODE    --> BUILD
-    BUILD   --> TEST
-    TEST    --> RELEASE
-    RELEASE --> DEPLOY
-    DEPLOY  --> OPERATE
-    OPERATE --> MONITOR
-    MONITOR -.->|Continuous Feedback| PLAN
-
-    style PLAN    fill:#FD5108,stroke:#FD5108,color:#fff
-    style CODE    fill:#FE7C39,stroke:#FE7C39,color:#fff
-    style BUILD   fill:#FFAA72,stroke:#FFAA72,color:#000
-    style TEST    fill:#FFCDA8,stroke:#FFCDA8,color:#000
-    style RELEASE fill:#FFE8D4,stroke:#FFE8D4,color:#000
-    style DEPLOY  fill:#FD5108,stroke:#FD5108,color:#fff
-    style OPERATE fill:#FE7C39,stroke:#FE7C39,color:#fff
-    style MONITOR fill:#FFAA72,stroke:#FFAA72,color:#000
-```
-
----
-
-## Phase Overview
+## The Problem
 
 <div class="grid cards" markdown>
 
--   :material-clipboard-check:{ .lg .middle } **Plan**
+-   :material-close-circle:{ .lg .middle style="color:#c0392b" } **Scattered Word docs or PDFs**
 
     ---
-    Define requirements, user stories, and sprint goals.  
-    Capture decisions and ADRs in Markdown alongside your code.
+    Files emailed around, saved to desktops, duplicated across shared drives.  
+    No one knows which copy is authoritative.
 
-    **Tools:** Jira · GitHub Issues · Linear
-
--   :material-source-branch:{ .lg .middle } **Code**
+-   :material-clock-alert:{ .lg .middle style="color:#c0392b" } **Outdated SharePoint pages**
 
     ---
-    Write code and docs together in the same repo.  
-    PR reviews enforce quality for both.
+    Last updated two years ago. Half the links are broken.  
+    Engineers stop trusting it and ask colleagues instead.
 
-    **Tools:** VS Code · Git · GitHub · GitLab
-
--   :material-hammer-wrench:{ .lg .middle } **Build**
+-   :material-file-multiple:{ .lg .middle style="color:#c0392b" } **Version confusion**
 
     ---
-    Compile, containerise, and package your application.  
-    Document Dockerfiles and build pipelines with annotations.
+    Four copies of the architecture doc.  
+    One named `System_Architecture_v3_John_edits_PLEASE_USE_THIS.pdf`.
 
-    **Tools:** Docker · Maven · npm · GitHub Actions
-
--   :material-flask-outline:{ .lg .middle } **Test**
+-   :material-account-question:{ .lg .middle style="color:#c0392b" } **Tribal knowledge**
 
     ---
-    Unit, integration, E2E, and security tests.  
-    Document test strategies, coverage targets, and test plans.
+    "Just ask Sarah" — if she's not in a meeting.  
+    Runbooks that have never been tested in production.
 
-    **Tools:** pytest · Jest · Cypress · Trivy · Snyk
+</div>
 
--   :material-package-variant-closed:{ .lg .middle } **Release**
+> *"I can never find anything. Where do we even keep our docs?"*  
+> — Engineering Lead, Architecture Review Q1 2024
 
-    ---
-    Version, tag, and generate changelogs automatically.  
-    Every release tag has docs that match exactly.
+---
 
-    **Tools:** Semantic Release · GitHub Releases · Helm
+## The Solution
 
--   :material-rocket-launch:{ .lg .middle } **Deploy**
+<div class="grid cards" markdown>
 
-    ---
-    Push to cloud with IaC. Deployment runbooks live beside  
-    the Terraform they describe — always in sync.
-
-    **Tools:** Terraform · k8s · ArgoCD · Flux
-
--   :material-server-network:{ .lg .middle } **Operate**
+-   :material-language-markdown:{ .lg .middle style="color:#1E6B8C" } **Markdown as Code**
 
     ---
-    Runbooks, SLOs, on-call guides — all in Markdown,  
-    versioned, searchable, and linked from your alerting.
+    Write docs alongside source code with **built-in version control**.  
+    Any editor, any OS, zero vendor lock-in.
 
-    **Tools:** PagerDuty · OpsGenie · Runbooks
-
--   :material-chart-line:{ .lg .middle } **Monitor**
+-   :material-pipe:{ .lg .middle style="color:#1E6B8C" } **Automated Pipelines**
 
     ---
-    Dashboards, alert definitions, and post-mortems documented  
-    where your team will actually find them.
+    GitHub Actions **automatically builds and publishes** on every commit.  
+    From merge to live site in under 60 seconds.
 
-    **Tools:** Grafana · Datadog · Prometheus · Loki
+-   :material-book-open-page-variant:{ .lg .middle style="color:#1E6B8C" } **MkDocs Portal**
+
+    ---
+    A clean, **searchable documentation portal** with full-text search,
+    tag taxonomy, and structured navigation — out of the box.
+
+-   :material-source-pull:{ .lg .middle style="color:#1E6B8C" } **PR-Reviewed**
+
+    ---
+    Documentation changes go through the same **pull request workflow** as code.  
+    Quality enforced by default — no more stale or unreviewed docs.
 
 </div>
 
 ---
 
-## Quick Start
-
-=== ":material-laptop: Local Preview"
-    ```bash
-    git clone https://github.com/12shubham/mkdocs-demo.git
-    cd mkdocs-demo
-    pip install -r requirements.txt
-    mkdocs serve
-    ```
-    Open **[http://127.0.0.1:8000](http://127.0.0.1:8000)** — hot-reloads on every save.
-
-=== ":material-file-plus: New Page"
-    ```bash
-    # 1. Create your markdown file
-    touch docs/my-section/my-page.md
-
-    # 2. Add to mkdocs.yml nav:
-    # nav:
-    #   - My Section:
-    #       - My Page: my-section/my-page.md
-
-    # 3. Start front matter
-    cat > docs/my-section/my-page.md << 'EOF'
-    ---
-    tags: [MyTag]
-    ---
-    # My Page Title
-    EOF
-    ```
-
-=== ":material-cloud-upload: Deploy"
-    ```bash
-    git add .
-    git commit -m "docs: add new page"
-    git push origin main
-    # GitHub Actions auto-deploys in < 60 seconds
-    ```
-
----
-
-!!! success "Live on GitHub Pages"
-    This site deploys automatically on every push to `main`.  
-    **[https://12shubham.github.io/mkdocs-demo](https://12shubham.github.io/mkdocs-demo)**
-
-
----
-
-## What is MkDocs?
-
-[MkDocs](https://www.mkdocs.org/) is a fast, simple, and beautiful static site generator designed specifically for project documentation. Source files are written in **Markdown** and configured with a single **YAML** file.
-
-## Why Material for MkDocs?
-
-The [Material theme](https://squidfunk.github.io/mkdocs-material/) is the most popular MkDocs theme. It gives you:
-
-| Feature | Description |
-|---|---|
-| :material-palette: Dark/Light mode | Toggle between themes |
-| :material-magnify: Instant search | Full-text search across all pages |
-| :material-navigation: Navigation tabs | Clean top-level navigation |
-| :material-code-tags: Code highlighting | Syntax highlighting with copy button |
-| :material-responsive: Responsive | Looks great on mobile |
-
-## Key Features Shown in This Demo
-
-=== "Navigation"
-    - Top-level **tabs** for major sections
-    - Left sidebar for sub-pages
-    - "Back to top" button
-
-=== "Search"
-    - Click the search bar (or press `/`) and try searching for any term on this site
-
-=== "Code Blocks"
-    ```python title="hello.py"
-    def greet(name: str) -> str:
-        return f"Hello, {name}!"
-
-    print(greet("MkDocs"))
-    ```
-
-=== "Admonitions"
-    !!! tip "Pro Tip"
-        Admonitions are a great way to highlight important information.
-
-    !!! warning "Watch Out"
-        This is a warning block — useful for caveats and gotchas.
-
----
-
-## How the Deploy Works
+## End-to-End Pipeline
 
 ```mermaid
 graph LR
-    A[Edit Markdown] --> B[git push to main]
-    B --> C[GitHub Actions triggers]
-    C --> D[mkdocs gh-deploy]
-    D --> E[Live on GitHub Pages]
+    A["✏️ Write Markdown"] --> B["git push"]
+    B --> C["Open Pull Request"]
+    C --> D["Review & Merge"]
+    D --> E["CI/CD Builds"]
+    E --> F["🌐 Live in <60s"]
+
+    style A fill:#2D2926,stroke:#2D2926,color:#fff
+    style B fill:#2D2926,stroke:#2D2926,color:#fff
+    style C fill:#1E6B8C,stroke:#1E6B8C,color:#fff
+    style D fill:#1E6B8C,stroke:#1E6B8C,color:#fff
+    style E fill:#FD5108,stroke:#FD5108,color:#fff
+    style F fill:#1a6e43,stroke:#1a6e43,color:#fff
 ```
 
-**[Get Started →](framework/index.md)**
+---
+
+## Why It Matters
+
+<div class="grid cards" markdown>
+
+-   :material-check-circle:{ .lg .middle style="color:#1a6e43" } **Always up-to-date**
+
+    ---
+    No more "which version is correct?" — docs are tied to every code release automatically.
+
+-   :material-check-circle:{ .lg .middle style="color:#1a6e43" } **Easy to maintain and collaborate on**
+
+    ---
+    Same PR workflow as code review. Engineers already know how to contribute.
+
+-   :material-check-circle:{ .lg .middle style="color:#1a6e43" } **Professional, searchable portal**
+
+    ---
+    Full-text search, tag taxonomy, structured navigation — all included.  
+    No Ctrl+F through PDFs.
+
+-   :material-check-circle:{ .lg .middle style="color:#1a6e43" } **Platform flexibility**
+
+    ---
+    Deploy to Azure, AWS, GCP, or GitHub Pages.  
+    Switch targets with a single config change.
+
+</div>
+
+---
+
+## Deployment Options
+
+<div class="grid cards" markdown>
+
+-   :material-microsoft-azure:{ .lg .middle style="color:#0078D4" } **Azure**
+
+    ---
+    [Azure Static Web Apps](deployment/azure.md) — global CDN, free tier, custom domains, automatic HTTPS.
+
+-   :material-aws:{ .lg .middle style="color:#FF9900" } **AWS**
+
+    ---
+    [S3 + CloudFront](deployment/aws.md) — enterprise scale, fine-grained IAM, geographic restrictions.
+
+-   :material-google-cloud:{ .lg .middle style="color:#4285F4" } **GCP**
+
+    ---
+    [Cloud Storage](deployment/gcp.md) — scalable static hosting backed by Google's global network.
+
+-   :material-github:{ .lg .middle } **GitHub Pages**
+
+    ---
+    [GitHub Pages](deployment/github.md) — zero config, built-in free hosting, deploys with one command.
+
+</div>
+
+---
+
+## Live Demo { #live-demo }
+
+See the difference between before and after docs-as-code — both states are live.
+
+=== ":material-close-circle:{ style='color:#c0392b' } Before"
+
+    **[Open the Before State →](before.md){ .md-button }**
+
+    | Folder | Problem |
+    |---|---|
+    | `architecture/` | 4 versions — `PLEASE_USE_THIS`, `DRAFT`, `FINAL`, `ARCHIVED` |
+    | `api/` | `USE_THIS_ONE!!` — but 3 files, no clear winner |
+    | `deployment/` | `FINAL_v3_USE_THIS` and `INFORMAL` and `NEEDS REVIEW` |
+    | `runbooks/` | None verified. One says `DO NOT USE`. |
+
+    No search. Status lives in the filename. The only way to know which is correct: ask someone.
+
+=== ":material-check-circle:{ style='color:#1a6e43' } After — This Site"
+
+    **You're looking at it.**
+
+    | What changed | How |
+    |---|---|
+    | Single source of truth | Git — one version, full history |
+    | Always current | Auto-deploys on every push to `main` |
+    | Searchable | Press ++slash++ to try it |
+    | Reviewed | Every change goes through a pull request |
+    | Navigable | Structure lives in `mkdocs.yml`, not filenames |
+
+    [Explore the Framework →](framework/index.md){ .md-button .md-button--primary }
+    [Deployment Guides →](deployment/index.md){ .md-button }
+
+---
+
+## Get Started
+
+Everything you need to adopt this as a reusable service — from spinning up a new site to going live.
+
+=== ":material-rocket-launch: Quick Start"
+
+    ```bash title="Clone and run locally"
+    git clone https://github.com/12shubham/mkdocs-demo my-docs
+    cd my-docs
+    pip install -r requirements.txt
+    mkdocs serve
+    # → http://127.0.0.1:8000  (hot-reloads on every save)
+    ```
+
+    ```bash title="Build for production"
+    mkdocs build
+    # Outputs to site/ — ready to deploy to any static host
+    ```
+
+=== ":material-file-plus: Create a Page"
+
+    ```bash title="Create the file"
+    mkdir -p docs/my-section
+    touch docs/my-section/my-page.md
+    ```
+
+    ```yaml title="Add front matter"
+    ---
+    title: My Page Title
+    description: Brief description for search and social cards.
+    tags:
+      - MyTag
+    ---
+
+    # My Page Title
+
+    Content goes here.
+    ```
+
+    ```yaml title="Register in mkdocs.yml nav"
+    nav:
+      - My Section:
+          - Overview:  my-section/index.md
+          - My Page:   my-section/my-page.md
+    ```
+
+    [Full Page Creation Guide →](framework/create-page.md){ .md-button }
+
+=== ":material-cog: Manage the Site"
+
+    | File | What it controls |
+    |---|---|
+    | `mkdocs.yml` | Site name, nav, theme, plugins — everything |
+    | `docs/assets/extra.css` | Brand colours mapped to Material CSS variables |
+    | `docs/javascripts/mermaid-config.js` | Mermaid diagram palette |
+    | `includes/abbreviations.md` | Hover tooltips on every page |
+    | `requirements.txt` | Pinned Python packages — identical builds everywhere |
+
+    [Framework Reference →](framework/reference.md){ .md-button }
+
+=== ":material-cloud-upload: Deploy"
+
+    Push to `main` — GitHub Actions handles the rest automatically.
+
+    | Target | Guide |
+    |---|---|
+    | :material-github: GitHub Pages | [deployment/github.md](deployment/github.md) |
+    | :material-microsoft-azure: Azure Static Web Apps | [deployment/azure.md](deployment/azure.md) |
+    | :material-aws: AWS S3 + CloudFront | [deployment/aws.md](deployment/aws.md) |
+    | :material-google-cloud: GCP Cloud Storage | [deployment/gcp.md](deployment/gcp.md) |
+
+    !!! tip "Security best practice"
+        Use **OIDC federation** (GitHub → Azure/AWS/GCP) instead of long-lived secrets.
+        No credentials stored in GitHub — the cloud provider issues short-lived tokens per run.
+
