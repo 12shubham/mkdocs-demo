@@ -2,62 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/after/</loc>
+         <lastmod>2026-04-28</lastmod>
+    </url>
+    <url>
+         <loc>https://12shubham.github.io/mkdocs-demo/before/</loc>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/tags/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/deployment/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/deployment/aws/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/deployment/azure/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/deployment/gcp/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/deployment/github/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/framework/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/framework/create-page/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/framework/reference/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/showcase/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/showcase/admonitions/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/showcase/code-blocks/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/showcase/diagrams/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
     <url>
          <loc>https://12shubham.github.io/mkdocs-demo/showcase/ui-components/</loc>
-         <lastmod>2026-04-27</lastmod>
+         <lastmod>2026-04-28</lastmod>
     </url>
 </urlset>

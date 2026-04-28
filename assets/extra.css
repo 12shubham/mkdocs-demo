@@ -5,6 +5,9 @@
 
    Orange scale:  500 #FD5108  400 #FE7C39  300 #FFAA72
                   200 #FFCDA8  100 #FFE8D4   50 #FFF5ED
+   Dark scale:    900 #1C1A18  800 #2D2926  700 #4A4845
+   Teal scale:    600 #1E6B8C  500 #2685AC  400 #5BAAC8
+   Green:         #1A6E43
    Grey scale:    500 #A1A8B3  400 #B5BCC4  300 #CBD1D6
                   200 #DFE3E6  100 #EEEFF1   50 #F5F7F8
    ============================================================ */
@@ -16,6 +19,15 @@
   --brand-orange-200: #FFCDA8;
   --brand-orange-100: #FFE8D4;
   --brand-orange-50:  #FFF5ED;
+
+  --brand-dark:       #2D2926;
+  --brand-dark-deep:  #1C1A18;
+  --brand-dark-mid:   #4A4845;
+
+  --brand-teal:       #1E6B8C;
+  --brand-teal-light: #5BAAC8;
+
+  --brand-green:      #1A6E43;
 
   --brand-grey-500: #A1A8B3;
   --brand-grey-400: #B5BCC4;
@@ -75,30 +87,49 @@
 
 /* ── Hero banner ─────────────────────────────────────────────────────────── */
 .hero-strip {
-  background: linear-gradient(135deg, var(--brand-orange) 0%, var(--brand-orange-400) 100%);
+  background:
+    radial-gradient(ellipse at 75% 50%, rgba(253,81,8,.30) 0%, transparent 65%),
+    linear-gradient(135deg, var(--brand-dark-deep) 0%, var(--brand-dark) 100%);
   border-radius: 8px;
   padding: 2.5rem 3rem;
   color: #fff;
   margin-bottom: 2rem;
+  border-left: 4px solid var(--brand-orange);
 }
 .hero-strip h1,
 .hero-strip h2,
 .hero-strip p { color: #fff !important; margin: 0 0 .75rem; }
 .hero-strip .md-button {
   margin: .5rem .5rem 0 0;
-  border-color: rgba(255,255,255,.6) !important;
+  border-color: rgba(255,255,255,.4) !important;
+  color: rgba(255,255,255,.85) !important;
+}
+.hero-strip .md-button:hover {
+  border-color: rgba(255,255,255,.8) !important;
   color: #fff !important;
 }
 .hero-strip .md-button--primary {
-  background-color: #fff !important;
-  color: var(--brand-orange) !important;
-  border-color: #fff !important;
+  background-color: var(--brand-orange) !important;
+  color: #fff !important;
+  border-color: var(--brand-orange) !important;
+}
+.hero-strip .md-button--primary:hover {
+  background-color: var(--brand-orange-400) !important;
+  border-color: var(--brand-orange-400) !important;
 }
 
 /* ── Phase / stat cards ──────────────────────────────────────────────────── */
 .phase-card {
   border-left: 4px solid var(--brand-orange);
   padding-left: 1rem;
+}
+
+/* ── Section alternating bg ──────────────────────────────────────────────── */
+.section-tinted {
+  background: var(--brand-grey-50);
+  border-radius: 8px;
+  padding: 1.5rem 2rem;
+  margin: 1rem 0;
 }
 
 /* ── Colour swatches (brand reference page) ──────────────────────────────── */
