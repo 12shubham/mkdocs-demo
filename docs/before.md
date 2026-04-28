@@ -4,38 +4,7 @@ hide:
   - toc
 ---
 
-# Before: What Documentation Looks Like Without This
-
-> *"I can never find anything. Where do we even keep our docs?"*  
-> — Engineering Lead, Architecture Review Q1 2024
-
----
-
-## The problems at a glance
-
-<div class="grid cards" markdown>
-
--   :material-close-circle:{ style="color:#c0392b" } **No search**
-
-    ---
-    Finding anything means scrolling a shared drive or asking a colleague.
-
--   :material-file-multiple:{ style="color:#c0392b" } **No single source of truth**
-
-    ---
-    Multiple versions of the same document, no clear winner.
-
--   :material-tag-off:{ style="color:#c0392b" } **Status in filenames**
-
-    ---
-    `FINAL`, `USE_THIS`, `DRAFT`, `v2_PLEASE_USE_THIS` — in the filename itself.
-
--   :material-account-question:{ style="color:#c0392b" } **Tribal knowledge**
-
-    ---
-    The only reliable way to know which document is correct: ask a person.
-
-</div>
+# Before: Acme Corp Documentation
 
 ---
 
@@ -94,6 +63,34 @@ hide:
 
 ---
 
+## The problems at a glance
+
+<div class="grid cards" markdown>
+
+-   :material-close-circle:{ style="color:#c0392b" } **No search**
+
+    ---
+    Finding anything means scrolling a shared drive or asking a colleague.
+
+-   :material-file-multiple:{ style="color:#c0392b" } **No single source of truth**
+
+    ---
+    Multiple versions of the same document, no clear winner.
+
+-   :material-tag-off:{ style="color:#c0392b" } **Status in filenames**
+
+    ---
+    `FINAL`, `USE_THIS`, `DRAFT`, `v2_PLEASE_USE_THIS` — in the filename itself.
+
+-   :material-account-question:{ style="color:#c0392b" } **Tribal knowledge**
+
+    ---
+    The only reliable way to know which document is correct: ask a person.
+
+</div>
+
+---
+
 ## What's missing
 
 | Problem | Impact |
@@ -106,4 +103,4 @@ hide:
 
 ---
 
-[See the After State — this site →](index.md){ .md-button .md-button--primary }
+[See the After State →](after.md){ .md-button .md-button--primary }

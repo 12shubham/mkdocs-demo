@@ -4,38 +4,34 @@ hide:
   - toc
 ---
 
-# After: What the Same Documentation Looks Like
-
-> *"I found it in 3 seconds. The search even highlighted the exact paragraph."*  
-> — Same Engineering Lead, Architecture Review Q1 2025
+# After: The Same Documentation, Done Right
 
 ---
 
-## What changed
+## How it looks
 
-<div class="grid cards" markdown>
+The file tree that replaced 17 PDFs across 5 chaotic folders:
 
--   :material-magnify:{ style="color:#1E6B8C" } **Full-text search**
+```text
+docs/
+├── index.md                     ← site home
+├── architecture/
+│   └── overview.md              ← replaces 4 conflicting version PDFs
+├── api/
+│   └── reference.md             ← replaces 3 conflicting API PDFs
+├── deployment/
+│   ├── index.md
+│   ├── aws.md
+│   └── runbook.md
+├── runbooks/
+│   ├── incident-response.md     ← reviewed & approved
+│   └── database-failover.md
+└── misc/
+    ├── onboarding.md
+    └── meeting-notes.md
+```
 
-    ---
-    Every word across every page is indexed. Results appear in milliseconds with highlighted context.
-
--   :material-source-branch:{ style="color:#1E6B8C" } **One version per topic**
-
-    ---
-    One file per topic. Git history shows exactly who changed what, and why, forever.
-
--   :material-tag:{ style="color:#1A6E43" } **Semantic file names**
-
-    ---
-    `architecture/overview.md` — no `FINAL`, `v3_John_edits`, or `USE_THIS_ONE!!` required.
-
--   :material-account-check:{ style="color:#1A6E43" } **Clear ownership**
-
-    ---
-    Every change has an author, a reviewer, and a PR. No more asking if "John's version" is safe.
-
-</div>
+17 PDFs → 14 pages. 5 messy folders → clean semantic tree. Zero ambiguity.
 
 ---
 
@@ -99,6 +95,34 @@ hide:
 
 ---
 
+## What changed
+
+<div class="grid cards" markdown>
+
+-   :material-magnify:{ style="color:#1E6B8C" } **Full-text search**
+
+    ---
+    Every word across every page is indexed. Results appear in milliseconds with highlighted context.
+
+-   :material-source-branch:{ style="color:#1E6B8C" } **One version per topic**
+
+    ---
+    One file per topic. Git history shows exactly who changed what, and why, forever.
+
+-   :material-tag:{ style="color:#1A6E43" } **Semantic file names**
+
+    ---
+    `architecture/overview.md` — no `FINAL`, `v3_John_edits`, or `USE_THIS_ONE!!` required.
+
+-   :material-account-check:{ style="color:#1A6E43" } **Clear ownership**
+
+    ---
+    Every change has an author, a reviewer, and a PR. No more asking if "John's version" is safe.
+
+</div>
+
+---
+
 ## What's fixed
 
 | Problem (Before) | Solution (After) |
@@ -112,36 +136,5 @@ hide:
 
 ---
 
-## How it looks
-
-The file tree that replaced 17 PDFs across 5 chaotic folders:
-
-```text
-docs/
-├── index.md                     ← site home, replaces README_IMPORTANT_READ_FIRST.pdf
-├── architecture/
-│   └── overview.md              ← replaces 4 conflicting version PDFs
-├── api/
-│   └── reference.md             ← replaces 3 conflicting API PDFs
-├── deployment/
-│   ├── index.md                 ← overview
-│   ├── aws.md                   ← replaces Deployment_Guide_AWS_v2.pdf
-│   └── runbook.md               ← replaces deployment_runbook_FINAL_v3_USE_THIS.pdf
-├── runbooks/
-│   ├── incident-response.md     ← replaces DRAFT_do_not_use.pdf (reviewed & approved)
-│   └── database-failover.md    ← replaces v1 + v2_with_Sarahs_comments
-└── misc/
-    ├── onboarding.md            ← replaces Onboarding_Checklist_TODO_INCOMPLETE.pdf
-    └── meeting-notes.md         ← replaces Meeting_Notes_Arch_Review_Q1_2024.pdf
-```
-
-17 PDFs → 14 pages. 5 messy folders → clean semantic tree. Zero ambiguity.
-
----
-
-<div style="text-align:center; margin-top: 2rem;">
-
-[Set this up for your team →](../framework/index.md){ .md-button .md-button--primary }
-[See how it's built →](../framework/create-page.md){ .md-button }
-
-</div>
+[Set this up for your team →](framework/index.md){ .md-button .md-button--primary }
+[See how it's built →](framework/create-page.md){ .md-button }
